@@ -1,0 +1,43 @@
+.footer {
+    color: #E8E9EA;
+    background: #2F323A;
+
+    .col-4 {
+        width: 278px;
+    }
+
+    .nav {
+        padding-left: 162px;
+    }
+
+    &__link-text {
+        padding-bottom: 12px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        /* identical to box height, or 24px */
+    }
+
+    &__top {
+        display: flex;
+        padding: 40px 0 40px;
+    }
+
+
+
+    &__top-logo {
+        padding-bottom: 22px;
+    }
+
+    &__top-email {
+        gap: 10px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+
+    &__bottom {
+        padding: 16px 0 20px;
+    }
+}

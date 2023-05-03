@@ -1,0 +1,147 @@
+.stock {
+    &__header {
+        display: flex;
+        padding-top: 80px;
+        justify-content: space-between;
+
+    }
+
+    &__header-title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 130%;
+        /* or 44px */
+
+        display: flex;
+        align-items: center;
+
+        /* Text/2F323A */
+
+        color: #2F323A;
+    }
+
+    &__header-btn {
+        display: flex;
+        padding: 12px 16px 12px 24px;
+        gap: 8px;
+        align-items: center;
+
+        background: #FFFFFF;
+        /* BG/D1D1D3 */
+
+        border: 1px solid #D1D1D3;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 136%;
+        /* or 24px */
+
+
+        /* Text/171B24 */
+
+        color: #171B24;
+    }
+
+    &__box-block {
+        margin-top: 16px;
+        display: flex;
+        background: #FFFFFF;
+        /* BG/E8E9EA */
+        border: 1px solid #E8E9EA;
+    }
+
+    &__box-img-deg {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        display: inline-block;
+        padding: 4px 8px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 145%;
+        /* identical to box height, or 22px */
+
+
+        /* Text/171B24 */
+
+        color: #171B24;
+        background: #FFFFFF;
+        /* Main/FBE303 */ 
+        border: 2px solid #FBE303;
+    }
+
+    &__box-sonora {
+        position: relative;
+        width: 278px;
+        height: 208px;
+        background: url(../images/stock/Img1.png) center/cover no-repeat;
+    }
+
+    &__box-master65 {
+        position: relative;
+        width: 278px;
+        height: 208px;
+        background: url(../images/stock/Img2.png) center/cover no-repeat;
+    }
+
+    &__box-netting {
+        position: relative;
+        width: 278px;
+        height: 208px;
+        background: url(../images/stock/Img3.png) center/cover no-repeat;
+    }
+
+    &__box-metal-tile {
+        position: relative;
+        width: 278px;
+        height: 208px;
+        background: url(../images/stock/Img4.png) center/cover no-repeat;
+    }
+
+    &__box-general {
+        position: relative;
+        background: #FFFFFF;
+        /* BG/E8E9EA */
+
+        border-left: 1px solid #E8E9EA;
+    }
+
+    &__box-general-text {
+        padding: 16px 16px 0;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        /* or 24px */
+
+        /* Text/2F323A */
+
+        color: #2F323A;
+    }
+
+    &__box-general-price {
+        position: absolute;
+        bottom: 80px;
+        left: 16px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 140%;
+        /* identical to box height, or 28px */
+
+
+        /* Text/171B24 */
+
+        color: #171B24;
+    }
+
+    &__box-general-btn {
+        position: absolute;
+        left: 16px;
+        bottom: 16px;
+        padding: 12px 88px;
+        background: #FCEC41;
+    }
+}

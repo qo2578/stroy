@@ -1,0 +1,132 @@
+.docs {
+    padding: 80px 0 80px;
+
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 120%;
+        /* identical to box height, or 58px */
+
+        display: flex;
+        align-items: center;
+
+        /* Text/171B24 */
+
+        color: #171B24;
+
+    }
+
+    &__box {
+        position: relative;
+        max-width: 376px;
+        min-height: 208px;
+
+        background: #2F323A;
+
+        &__card {
+            position: absolute;
+            top: 25px;
+            padding: 16px;
+
+            min-width: 376px;
+            min-height: 148px;
+
+            /* BG/FFFFFF */
+
+            background: #FFFFFF;
+            /* BG/E8E9EA */
+
+            border-top: 1px solid #E8E9EA;
+
+            &-title {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 136%;
+                /* or 24px */
+
+
+                /* Text/2F323A */
+
+                color: #2F323A;
+                padding-bottom: 4px;
+            }
+
+            &-pdf {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 150%;
+                /* identical to box height, or 24px */
+
+
+                /* Text/2F323A */
+
+                color: #2F323A;
+                padding-bottom: 28px;
+            }
+
+            &-btn {
+                background: #FCEC41;
+                padding: 12px 136px;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 136%;
+                /* or 24px */
+
+
+                /* Text/171B24 */
+
+                color: #171B24;
+            }
+        }
+    }
+
+    &__block {
+        position: absolute;
+        top: 37px;
+        left: 55.5px;
+        min-width: 260px;
+        min-height: 378.61px;
+        background: #FFFFFF;
+        box-shadow: 0px 15px 40px rgba(67, 62, 6, 0.1);
+
+        &-title {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 140%;
+            /* or 28px */
+
+            text-align: center;
+
+            /* Text/2F323A */
+
+            color: #2F323A;
+            padding: 25px 20px 20px;
+        }
+
+        &-line-short {
+            background: #E9E9E9;
+            bottom: 257px;
+            left: 20px;
+            position: absolute;
+            min-width: 175px;
+            height: 20px;
+        }
+
+
+
+
+        &-line-long {
+            background: #E9E9E9;
+            left: 20px;
+            bottom: 222px;
+            position: absolute;
+            min-width: 220px;
+            height: 20px;
+        }
+    }
+}

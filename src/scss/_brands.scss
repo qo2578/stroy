@@ -1,0 +1,59 @@
+.brands {
+    padding: 80px 0 80px;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 18px;
+
+    }
+
+    &__header-title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 130%;
+        /* or 44px */
+
+        display: flex;
+        align-items: center;
+
+        /* Text/2F323A */
+
+        color: #2F323A;
+    }
+
+    &__header-btn {
+        display: flex;
+        padding: 12px 16px 12px 24px;
+        gap: 8px;
+        align-items: center;
+
+        background: #FFFFFF;
+        /* BG/D1D1D3 */
+
+        border: 1px solid #D1D1D3;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 136%;
+        /* or 24px */
+
+
+        /* Text/171B24 */
+
+        color: #171B24;
+    }
+
+    &__box {
+        background: #FFFFFF;
+        /* BG/E8E9EA */
+
+        border: 1px solid #E8E9EA;
+      margin-bottom: 19px;
+    }
+    &__img{
+        display: flex;
+        text-align: center;
+    }
+}

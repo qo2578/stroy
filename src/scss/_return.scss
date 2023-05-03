@@ -1,0 +1,29 @@
+.return__general {
+    display: flex;
+    padding: 80px 0;
+    gap: 16px;
+
+    &-title {
+        min-width: 376px;
+        justify-content: flex-start;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 130%;
+        /* or 44px */
+
+        color: #2F323A;
+    }
+
+    &-text {
+        min-width: 768px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+
+        /* Text/2F323A */
+
+        color: #2F323A;
+    }
+}

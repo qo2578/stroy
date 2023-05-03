@@ -1,0 +1,29 @@
+.brand-letters {
+    display: flex;
+    padding-top: 80px;
+    gap: 8px;
+    // justify-content: space-around;
+}
+
+.brand__btn {
+    background: #FBE303;
+    padding: 6px 14px;
+}
+
+.brand__abc-eng {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 136%;
+    /* or 24px */
+
+
+    /* Text/171B24 */
+
+    color: #171B24;
+    background: #FFFFFF;
+    /* BG/D1D1D3 */
+
+    border: 1px solid #D1D1D3;
+    padding: 4px 8px;
+}

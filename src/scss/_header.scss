@@ -1,0 +1,278 @@
+.header {
+    &-desktop {
+
+        .header-top {
+            background: #f6f6f6;
+            padding: 10px 0;
+
+
+            &__link {
+                display: flex;
+                align-items: center;
+                gap: 11px;
+                font-family: 'Manrope', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 145%;
+                /* identical to box height, or 22px */
+                /* Text/5D6066 */
+                color: #5D6066;
+            }
+
+            &__menu {
+                gap: 24px;
+            }
+        }
+
+        .header-middle {
+            padding: 16px 0;
+            border-bottom: 1px solid #E8E9EA;
+
+            &__common {
+                display: flex;
+                margin-left: 114px;
+                gap: 16px;
+            }
+
+            &__catalog {
+                display: flex;
+                align-items: center;
+                padding: 12px 22px;
+                gap: 8px;
+                width: 144px;
+                height: 48px;
+                /* Main/FDF074 */
+                background: #FCEC41;
+
+            }
+
+            &__input {
+                border: none;
+                padding: 12px 16px;
+                background: none;
+
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            &__img {
+                border: none;
+                padding: 12px 16px;
+                background: none;
+            }
+
+            &__btn {
+                top: 0;
+                right: 0;
+                height: 48px;
+                position: absolute;
+                border: none;
+                background: none;
+            }
+
+            &__form {
+                display: flex;
+                position: relative;
+                max-width: 444px;
+                width: 100%;
+                height: 48px;
+                justify-content: space-between;
+                align-items: center;
+                padding: 12px 16px;
+                gap: 8px;
+                background: #F6F6F6;
+                border-bottom: 1px solid #D1D1D3;
+            }
+
+            &__profile {
+                display: flex;
+
+            }
+
+            &__link {
+                width: 82px;
+                height: 48px;
+                text-align: center;
+            }
+
+
+        }
+
+        .header-bottom {
+            // display: flex;
+            padding: 10px 0;
+            border-bottom: 1px solid #E8E9EA;
+            gap: 30px;
+
+            &__link {
+                gap: 30px;
+            }
+        }
+    }
+
+    &-mobile {
+        display: none;
+
+        .header-top {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+
+            .burger-menu {
+                width: 40px;
+                height: 40px;
+                padding: 11px;
+                position: relative;
+                cursor: pointer;
+
+                &.active {
+                    .burger-menu__line {
+                        background: none;
+
+                        &::before {
+                            width: 100%;
+                            top: 0;
+                            left: 0;
+                            transform: rotate(45deg);
+                        }
+
+                        &::after {
+                            width: 100%;
+                            top: 0;
+                            left: 0;
+                            transform: rotate(-45deg);
+                        }
+                    }
+                }
+
+                &__line {
+                    position: absolute;
+                    width: 18px;
+                    top: 50%;
+                    left: 50%;
+                    height: 2px;
+                    transform: translate(-50%, -50%);
+                    background: #2F323A;
+                    border-radius: 3px;
+                    transition: 0.2s;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 8px;
+                        top: -6px;
+                        left: 0;
+                        height: 2.5px;
+                        background: #2F323A;
+                        border-radius: 3px;
+                        transition: 0.3s;
+                    }
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 12px;
+                        bottom: -6px;
+                        left: 0;
+                        height: 2.5px;
+                        background: #2F323A;
+                        border-radius: 3px;
+                        transition: 0.3s;
+                    }
+                }
+            }
+
+            &__form {
+                display: flex;
+                position: relative;
+                // max-width: 444px;
+                width: 100%;
+                height: 48px;
+                justify-content: space-between;
+                align-items: center;
+                padding: 12px 16px;
+                gap: 8px;
+                background: #F6F6F6;
+                border-bottom: 1px solid #D1D1D3;
+            }
+
+            &__btn {
+                top: 0;
+                right: 0;
+                height: 48px;
+                position: absolute;
+                border: none;
+                background: none;
+            }
+
+            &__input {
+                width: 100%;
+                border: none;
+                padding: 12px 16px;
+                background: none;
+
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            &__img {
+                border: none;
+                padding: 12px 16px;
+                background: none;
+            }
+        }
+
+        .header-bottom {
+            position: fixed;
+            width: 100%;
+            top: 97.5px;
+            left: 0;
+            height: calc(100vh - 97.5px);
+            background: #fff;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            &.active {
+                display: flex;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .header {
+        &-desktop {
+            .header-middle {
+                &__form {
+                    width: 100%;
+                }
+            }
+
+            .header-bottom {
+                display: none;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .header {
+        &-desktop {
+            display: none;
+        }
+
+        &-mobile {
+            display: block;
+        }
+    }
+}

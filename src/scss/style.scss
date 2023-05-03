@@ -1,0 +1,50 @@
+@import '../libs/btstr/bootstrap-grid.min.css';
+@import '../fonts/manrope.css';
+@import '../libs/owl/owl.carousel.min.css';
+@import '../libs/owl/owl.theme.default.css';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    scroll-behavior: smooth;
+}
+a, a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style-type: none;
+}
+.to-top-btn{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background: #FCEC41;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 50px;
+    right: 50px;
+
+}
+
+
+@import './_header.scss';
+@import './_home.scss';
+@import './_stock.scss';
+@import './_category.scss';
+@import './_bestsellers.scss';
+@import './_brands.scss';
+@import './_feedback.scss';
+@import './about.scss';
+@import './footer.scss';
+@import './popup.scss';
+@import './delivery.scss';
+@import './contacts.scss';
+@import './docs.scss';
+@import './return.scss';
+@import './brand';
+@import './catalog';

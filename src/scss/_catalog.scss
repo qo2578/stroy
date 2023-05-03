@@ -1,0 +1,49 @@
+.catalog {
+
+    &-tabs {
+
+        &__content {
+            display: none;
+
+            &_active {
+                display: block;
+            }
+        }
+
+        &__caption {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        &__btn {
+            background: #FFFFFF;
+            /* BG/D1D1D3 */
+
+            border: 1px solid #D1D1D3;
+            // display: flex;
+            // flex-direction: row;
+            // align-items: center;
+            padding: 8px 12px;
+        }
+    }
+
+    &-card {
+        &__list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        &__items {
+            transition: 0.3s;
+
+            &:hover {
+                padding-left: 20px;
+                background: url('../../src/images/catalog/Icon.png') left center/16px 16px no-repeat;
+            }
+
+        }
+    }
+
+}

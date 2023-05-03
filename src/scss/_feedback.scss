@@ -1,0 +1,187 @@
+.feedback {
+    padding: 80px 0;
+    position: relative;
+    background: #F6F6F6;
+    width: 100vw;
+    overflow: hidden;
+
+    .owl-carousel .owl-stage-outer {
+        overflow: initial;
+    }
+
+    &__title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 130%;
+        /* or 44px */
+
+        display: flex;
+        align-items: center;
+
+        /* Text/2F323A */
+
+        color: #2F323A;
+        margin-bottom: 20px;
+    }
+
+    &-card {
+        min-width: 376px;
+        padding: 24px;
+        background: #FFFFFF;
+        /* BG/E8E9EA */
+
+        border: 1px solid #E8E9EA;
+
+        &_top {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 12px;
+        }
+
+        &_quotes {
+            width: 32px !important;
+            height: 24px;
+        }
+
+        &_user {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 136%;
+            /* or 24px */
+
+
+            /* Text/2F323A */
+
+            color: #2F323A;
+        }
+
+        &_comment {
+            min-height: 216px;
+            margin-bottom: 15px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            /* or 24px */
+
+
+            /* Text/2F323A */
+
+            color: #2F323A;
+        }
+
+        &_date {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 145%;
+            /* identical to box height, or 22px */
+
+
+            /* Text/8B8D92 */
+
+            color: #8B8D92;
+        }
+    }
+
+
+
+
+
+    .owl-nav {
+        position: absolute;
+        right: 0;
+        display: flex;
+        gap: 12px;
+        top: -68px;
+        margin-top: 0;
+
+        .feedback__prev,
+        .feedback__next {
+            background: #FFFFFF;
+            /* BG/D1D1D3 */
+
+            border: 1px solid #000000;
+            width: 52px;
+            height: 52px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .feedback {
+//     background: #F6F6F6;
+//     padding: 80px 0;
+
+//     &__header {
+//         display: flex;
+//         justify-content: space-between;
+//         padding-bottom: 20px;
+//     }
+
+//     &__header-title {
+//         font-style: normal;
+//         font-weight: 600;
+//         font-size: 34px;
+//         line-height: 130%;
+//         /* or 44px */
+
+//         display: flex;
+//         align-items: center;
+
+//         /* Text/2F323A */
+
+//         color: #2F323A;
+//     }
+
+//     &__header-btns {
+//         gap: 12px;
+//     }
+
+//     &__header-btn {
+//         padding: 14px;
+//         background: #FFFFFF;
+//         /* BG/D1D1D3 */
+
+//         border: 1px solid #000000;
+//     }
+
+//     &__box {
+//         display: flex;
+//         gap: 16px;
+//     }
+// }

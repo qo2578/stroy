@@ -1,0 +1,120 @@
+.accordion__block {
+    padding: 80px 140px;
+    border: 1px solid #D1D1D3;
+
+    .accordion__title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 130%;
+        /* or 44px */
+
+        display: flex;
+        align-items: center;
+
+        /* Text/2F323A */
+
+        color: #2F323A;
+        padding-bottom: 20px;
+    }
+}
+
+
+.accordion {
+    position: relative;
+    background-color: #F6F6F6;
+    color: #2F323A;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.2s;
+    padding: 16px 20px;
+    margin-bottom: 12px;
+
+    &__text {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 136%;
+        /* or 24px */
+
+        display: flex;
+        align-items: center;
+
+        /* Text/2F323A */
+
+        color: #2F323A;
+    }
+
+    &__info {
+        display: none;
+    }
+
+    &__v {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+
+        &:hover {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.active {
+    .accordion__info {
+        display: block;
+
+    }
+
+    background-color: #F6F6F6;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: #F6F6F6;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.delivery__plan {
+    padding: 80px 0 80px;
+
+    &-title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 130%;
+        /* or 44px */
+
+        display: flex;
+        align-items: center;
+
+        /* Text/2F323A */
+        padding-bottom: 32px;
+    }
+
+    &-img {
+        padding-bottom: 12px;
+    }
+
+    &-text {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        /* or 24px */
+
+        display: flex;
+        align-items: center;
+
+        /* Text/2F323A */
+
+        color: #2F323A;
+    }
+}

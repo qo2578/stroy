@@ -36,8 +36,41 @@
     }
 }
 
-.brand{
+.brand {
     &-tabs {
+        &__title {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 34px;
+            line-height: 130%;
+            /* or 44px */
+
+            display: flex;
+            align-items: center;
+
+            /* Dark */
+
+            color: #333333;
+        }
+
+        &__text {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 150%;
+            /* identical to box height, or 24px */
+
+
+            /* Text/2F323A */
+
+            color: #2F323A;
+            transition: 0.3s;
+
+            &:hover {
+                padding-left: 20px;
+                background: url('../../src/images/catalog/Icon.png') left center/16px 16px no-repeat;
+            }
+        }
 
         &__content {
             padding-top: 80px;
@@ -46,6 +79,11 @@
             &_active {
                 display: block;
             }
+
+            .row {
+                padding: 28px 0;
+            }
+
         }
 
         &__caption {
@@ -59,6 +97,7 @@
             cursor: pointer;
             border: 1px solid #D1D1D3;
             padding: 8px 12px;
+
             &_active {
                 background: #FBE303;
                 border: none;
@@ -66,6 +105,7 @@
         }
     }
 }
+
 .brand-letters {
     display: flex;
     padding-top: 80px;

@@ -1,3 +1,71 @@
+.brand-home {
+    padding: 40px 40px 80px;
+
+    &__bg {
+        background: url(../images/brand/frame1.png) center/cover no-repeat;
+        min-width: 1360px;
+        min-height: 232px;
+        padding: 40px 100px;
+    }
+
+    &__ul {
+        display: flex;
+    }
+
+    &__li:not(:last-child)::after {
+        display: inline-block;
+        margin: 0 .25rem;
+        content: "→";
+        font-style: normal;
+    }
+
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 120%;
+        /* identical to box height, or 58px */
+
+        display: flex;
+        align-items: center;
+
+        /* Text/171B24 */
+
+        color: #171B24;
+        padding-top: 20px;
+    }
+}
+
+.brand{
+    &-tabs {
+
+        &__content {
+            padding-top: 80px;
+            display: none;
+
+            &_active {
+                display: block;
+            }
+        }
+
+        &__caption {
+            padding-top: 80px;
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        &__btn {
+            cursor: pointer;
+            border: 1px solid #D1D1D3;
+            padding: 8px 12px;
+            &_active {
+                background: #FBE303;
+                border: none;
+            }
+        }
+    }
+}
 .brand-letters {
     display: flex;
     padding-top: 80px;

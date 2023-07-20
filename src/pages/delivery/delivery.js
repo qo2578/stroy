@@ -1,17 +1,14 @@
-$(document).ready(function () {
-    $('.accordion').click(function () {
-        $(this).toggleClass('active')
-    });
-    $('.burger-menu').on('click', function(){
-        $('.header-bottom').toggleClass('active')
-        $('.burger-menu').toggleClass('active')
-    })
-})
+let acc = document.getElementsByClassName("accordion");
+let i;
 
-// const accArr = Array.from(document.getElementsByClassName('accordion'))
-
-// accArr.map((el) => {
-//     el.addEventListener('click', () => {
-//         el.classList.toggle('active')
-//     })
-// })
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}

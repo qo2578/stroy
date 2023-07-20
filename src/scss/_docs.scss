@@ -1,6 +1,17 @@
 .docs {
     padding: 80px 0 80px;
 
+    &__ul {
+        display: flex;
+    }
+
+    &__li:not(:last-child)::after {
+        display: inline-block;
+        margin: 0 .25rem;
+        content: "→";
+        font-style: normal;
+    }
+
     &__title {
         font-style: normal;
         font-weight: 700;

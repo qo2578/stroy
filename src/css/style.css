@@ -558,8 +558,6 @@ ul {
   font-weight: 500;
   font-size: 18px;
   line-height: 136%;
-  /* or 24px */
-  /* Text/171B24 */
   color: #171B24;
 }
 
@@ -1279,6 +1277,7 @@ ul {
 
 .accordion__block {
   padding: 80px 140px;
+  margin-bottom: 80px;
   border: 1px solid #D1D1D3;
 }
 .accordion__block .accordion__title {
@@ -1295,53 +1294,46 @@ ul {
 }
 
 .accordion {
-  position: relative;
-  background-color: #F6F6F6;
-  color: #2F323A;
+  background-color: #eee;
+  color: #444;
   cursor: pointer;
-  padding: 18px;
+  padding: 10px;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
   font-size: 15px;
-  transition: 0.2s;
-  padding: 16px 20px;
-  margin-bottom: 12px;
-}
-.accordion__text {
+  transition: 0.4s;
+  font-size: 19px;
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
   line-height: 136%;
-  /* or 24px */
-  display: flex;
-  align-items: center;
-  /* Text/2F323A */
-  color: #2F323A;
-}
-.accordion__info {
-  display: none;
-}
-.accordion__v {
-  position: absolute;
-  top: 25px;
-  right: 25px;
-}
-.accordion__v:hover {
-  transform: rotate(180deg);
 }
 
-.active {
-  background-color: #F6F6F6;
+.active,
+.accordion:hover {
+  background-color: #ccc;
 }
-.active .accordion__info {
-  display: block;
+
+.accordion:after {
+  content: "+";
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "−";
 }
 
 .panel {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
   padding: 0 18px;
-  background-color: #F6F6F6;
+  background-color: white;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
@@ -1419,6 +1411,15 @@ ul {
 
 .docs {
   padding: 80px 0 80px;
+}
+.docs__ul {
+  display: flex;
+}
+.docs__li:not(:last-child)::after {
+  display: inline-block;
+  margin: 0 0.25rem;
+  content: "→";
+  font-style: normal;
 }
 .docs__title {
   font-style: normal;
@@ -1630,8 +1631,6 @@ ul {
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
-  /* identical to box height, or 24px */
-  /* Text/2F323A */
   color: #2F323A;
   transition: 0.3s;
 }

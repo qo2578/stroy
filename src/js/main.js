@@ -45,6 +45,7 @@ $(document).ready(function () {
         $('.overlay').fadeOut(1000)
         $('.login-popup').fadeOut(1000)
         $('.reg-popup').fadeOut(1000)
+        $('.city-popup').fadeOut(1000)
 
     });
     //Инструкция выведения всплывающего окна для регистрации
@@ -57,6 +58,7 @@ $(document).ready(function () {
         eve.preventDefault()
         $('.overlay').fadeIn(1000)
         $('.city-popup').fadeIn(1000)
+        $('.login-popup').fadeOut(1000)
     })
     $(window).on('scroll', function () {
         if ($(window).scrollTop() > 500) {

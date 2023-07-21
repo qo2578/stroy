@@ -8,7 +8,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Manrope', sans-serif;
-    scroll-behavior: smooth;
+    // scroll-behavior: smooth;
 }
 a, a:hover{
     text-decoration: none;
@@ -50,3 +50,4 @@ ul{
 @import './return.scss';
 @import './brand';
 @import './catalog';
+@import './personalArea';

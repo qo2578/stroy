@@ -1,0 +1,94 @@
+.personalArea{
+    .reg-popup {
+        position: absolute;
+        max-width: 572px;
+        width: 100%;
+        min-height: 396px;
+        background: #fff;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+
+        &__title {
+            padding: 36px 36px 24px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 34px;
+            line-height: 130%;
+            /* Text/2F323A */
+
+            color: #2F323A;
+            align-items: center;
+            text-align: center;
+        }
+
+        &__box {
+            display: flex;
+            justify-content: space-around;
+            margin: 0 36px;
+            gap: 16px;
+        }
+
+        &__text {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 150%;
+            /* identical to box height, or 24px */
+
+            /* Text/2F323A */
+
+            color: #2F323A;
+        }
+
+
+        input[type=text] {
+            color: #8B8D92;
+            border: 0;
+            outline: none;
+            display: flex;
+            margin: 8px 0 24px;
+            max-width: 242px;
+            min-width: 242px;
+            min-height: 48px;
+            padding: 12px 16px;
+
+            background: #F6F6F6;
+            border-bottom: 1px solid #D1D1D3;
+
+        }
+
+        input[type=password] {
+            color: #8B8D92;
+            border: 0;
+            outline: none;
+            display: flex;
+            margin: 8px 0 24px;
+            max-width: 242px;
+            min-width: 242px;
+            min-height: 48px;
+            padding: 12px 16px;
+            background: #F6F6F6;
+            border-bottom: 1px solid #D1D1D3;
+
+        }
+
+        &__btn {
+            display: inline-block;
+            margin-left: 36px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 136%;
+            /* or 24px */
+
+
+            /* Text/171B24 */
+
+            color: #171B24;
+            padding: 12px 165px;
+            background: #FCEC41;
+        }
+    }
+}

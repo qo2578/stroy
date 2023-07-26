@@ -11,3 +11,5 @@ DG.then(function () {
     });
     DG.marker([42.869545, 74.587186], {icon:myIcon}).bindPopup('Ants cofe').openPopup().addTo(map);
 });
+
+

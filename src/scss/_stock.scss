@@ -68,9 +68,10 @@
 
         color: #171B24;
         background: #FFFFFF;
-        /* Main/FBE303 */ 
+        /* Main/FBE303 */
         border: 2px solid #FBE303;
     }
+
     &__box-sonora {
         position: relative;
         width: 278px;
@@ -121,6 +122,9 @@
     }
 
     &__box-general-price {
+        gap: 8px;
+        align-items: center;
+        display: flex;
         position: absolute;
         bottom: 80px;
         left: 16px;
@@ -134,6 +138,17 @@
         /* Text/171B24 */
 
         color: #171B24;
+
+        &-min {
+            color: var(--text-8-b-8-d-92, #8B8D92);
+            /* Text M+ */
+            text-decoration: line-through;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%;
+            /* 24px */
+        }
     }
 
     &__box-general-btn {

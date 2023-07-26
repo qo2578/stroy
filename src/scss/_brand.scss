@@ -54,6 +54,7 @@
         }
 
         &__text {
+            cursor: pointer;
             font-style: normal;
             font-weight: 500;
             font-size: 16px;
@@ -92,13 +93,48 @@
             cursor: pointer;
             border: 1px solid #D1D1D3;
             padding: 8px 12px;
+            width: 36px;
+            align-items: center;
+            text-align: center;
+
+
+            &:hover {
+                background: #FBE303;
+                border: 1px solid #FBE303;
+            }
 
             &_active {
-                background: #FBE303;
-                border: none;
+                width: 50px;
             }
         }
+
     }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .block {
+        width: 200px;
+        height: 130px;
+        border: 1px solid #E8E9EA;
+        margin: 5px;
+        overflow: hidden;
+        margin-bottom: 16px;
+    }
+
+    .block:hover {
+        border-color: #5D6066;
+    }
+
+    .block img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
 }
 
 .brand-letters {

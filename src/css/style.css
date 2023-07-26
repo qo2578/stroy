@@ -1693,6 +1693,9 @@ ul {
   padding-top: 20px;
 }
 
+.brand {
+  padding-bottom: 80px;
+}
 .brand-tabs__title {
   font-style: normal;
   font-weight: 600;

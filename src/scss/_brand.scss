@@ -98,17 +98,17 @@
             align-items: center;
             text-align: center;
 
+            &_active {
+                background: #FBE303;
+                border: 1px solid #FBE303;
+                width: 50px;
 
+            }
             &:hover {
                 background: #FBE303;
                 border: 1px solid #FBE303;
             }
-
-            &_active {
-                width: 50px;
-            }
         }
-
     }
 
     .row {

@@ -53,12 +53,13 @@
 }
 
 .accordion__block {
-    margin: 0 auto;
+
     padding: 80px 140px;
     margin-bottom: 80px;
     border: 1px solid #D1D1D3;
 
     .accordion__title {
+        margin-left: 130px ;
         font-style: normal;
         font-weight: 600;
         font-size: 34px;
@@ -77,6 +78,7 @@
 
 
 .accordion {
+    margin-left: 130px ;
     background-color: #F6F6F6;
     color: #2F323A;
     cursor: pointer;

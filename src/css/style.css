@@ -1351,12 +1351,12 @@ ul {
 }
 
 .accordion__block {
-  margin: 0 auto;
   padding: 80px 140px;
   margin-bottom: 80px;
   border: 1px solid #D1D1D3;
 }
 .accordion__block .accordion__title {
+  margin-left: 130px;
   font-style: normal;
   font-weight: 600;
   font-size: 34px;
@@ -1370,6 +1370,7 @@ ul {
 }
 
 .accordion {
+  margin-left: 130px;
   background-color: #F6F6F6;
   color: #2F323A;
   cursor: pointer;
@@ -1744,12 +1745,14 @@ ul {
   align-items: center;
   text-align: center;
 }
+.brand-tabs__btn_active {
+  background: #FBE303;
+  border: 1px solid #FBE303;
+  width: 50px;
+}
 .brand-tabs__btn:hover {
   background: #FBE303;
   border: 1px solid #FBE303;
-}
-.brand-tabs__btn_active {
-  width: 50px;
 }
 .brand .row {
   display: flex;
@@ -1798,6 +1801,9 @@ ul {
   padding: 4px 8px;
 }
 
+.catalog {
+  padding-bottom: 80px;
+}
 .catalog-home {
   padding: 40px 40px 0;
 }

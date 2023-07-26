@@ -92,28 +92,45 @@
         <section class="personalArea">
             <div class="container">
                 <h2 class="personalArea__title">Личный кабинет</h2>
-                <div class="reg">
+                <div class="personalArea-reg">
                     <h2 class="personalArea-reg__title">Личная информация</h2>
                     <form action="" class="personalArea-reg__form">
                         <div class="personalArea-reg__box">
                             <label for="mail" class="personalArea-reg__text">
                                 Имя
-                                <input type="text" id="mail" name="mail" placeholder="">
+                                <input type="text" class="text" name="mail" placeholder="">
                             </label>
                             <label for="mail" class="personalArea-reg__text">
+                                Фамилия
+                                <input type="text" class="text" name="mail" placeholder="">
+                            </label>
+                        </div>
+                        <div class="personalArea-reg__box">
+                            <label for="date" class="personalArea-reg__text">
+                                Дата рождения
+                                <input type="date" class="text" name="date" placeholder="">
+                            </label>
+        
+                            <label for="phone" class="personalArea-reg__text">
+                                Телефон
+                                <input type="tel" class="text" name="phone" placeholder="">
+                            </label>
+                        </div>
+                        <div class="personalArea-reg__box">
+                            <label for="mail" class="personalArea-reg__text">
                                 E-mail
-                                <input type="text" id="mail" name="mail" placeholder="">
+                                <input type="email" class="email" name="email" placeholder="">
                             </label>
                         </div>
                         <div class="personalArea-reg__box">
                             <label for="password" class="personalArea-reg__text">
                                 Новый пароль
-                                <input type="password" id="password" name="password" placeholder="">
+                                <input type="password" class="password" name="password" placeholder="">
                             </label>
         
                             <label for="password" class="personalArea-reg__text">
                                 Подтверждение пароля
-                                <input type="password" id="password" name="password" placeholder="">
+                                <input type="password" class="password"name="password" placeholder="">
                             </label>
                         </div>
                     </form>

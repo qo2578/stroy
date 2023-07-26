@@ -112,6 +112,12 @@
     font-weight: bold;
     float: right;
     margin-left: 5px;
+  
+}
+.accordion.active{
+    .arrow{
+        transform: rotate(180deg);
+    }
 }
 
 

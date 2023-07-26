@@ -68,3 +68,28 @@ $(document).ready(function () {
         }
     })
 });
+const addToCartBtn = document.querySelector('.bestsellers__box-general-btn');
+const counter = document.querySelector('.counter');
+const minusBtn = document.querySelector('.counter__minus');
+const plusBtn = document.querySelector('.counter__plus');
+const counterValue = document.querySelector('.counter__value');
+
+let count = 0;
+
+addToCartBtn.addEventListener('click', function(event) {
+  event.preventDefault();
+  addToCartBtn.style.display = 'none';
+  counter.style.display = 'flex';
+});
+
+minusBtn.addEventListener('click', function() {
+  if (count > 0) {
+    count--;
+    counterValue.textContent = count;
+  }
+});
+
+plusBtn.addEventListener('click', function() {
+  count++;
+  counterValue.textContent = count;
+});

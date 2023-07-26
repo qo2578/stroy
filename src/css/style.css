@@ -572,6 +572,50 @@ ul {
   line-height: 136%;
   color: #171B24;
 }
+.bestsellers__box-general-btn:hover {
+  background: #2F323A;
+  color: #FFF;
+}
+
+.counter {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  width: 90%;
+  display: none;
+  border: 1px solid var(--bgd-1-d-1-d-3, #D1D1D3);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 136%;
+  background: #FFF;
+  color: #171B24;
+}
+.counter__btn {
+  cursor: pointer;
+  border: none;
+  background: #FFF;
+  font-size: 29px;
+  height: 48px;
+  width: 48px;
+}
+.counter__btn:hover {
+  background: #2F323A;
+  color: #FFF;
+}
+.counter__value {
+  border-left: 1px solid var(--bgd-1-d-1-d-3, #D1D1D3);
+  width: 175px;
+  border-right: 1px solid var(--bgd-1-d-1-d-3, #D1D1D3);
+  height: 48px;
+  color: var(--text-171-b-24, #171B24);
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 136%;
+  /* 24.48px */
+}
 
 .brands {
   padding: 80px 0 80px;
@@ -1346,6 +1390,10 @@ ul {
   margin-left: 5px;
 }
 
+.accordion.active .arrow {
+  transform: rotate(180deg);
+}
+
 .panel {
   width: 768px;
   font-size: 16px;
@@ -1842,6 +1890,7 @@ ul {
   line-height: 120%;
 }
 .personalArea-reg {
+  margin: 0 auto;
   position: relative;
   height: 604px;
   width: 768px;

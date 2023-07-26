@@ -442,11 +442,16 @@ ul {
   /* 24px */
 }
 .stock__box-general-btn {
+  cursor: pointer;
   position: absolute;
   left: 16px;
   bottom: 16px;
   padding: 12px 88px;
   background: #FCEC41;
+}
+.stock__box-general-btn:hover {
+  background: #2F323A;
+  color: #FFF;
 }
 
 .category__header {
@@ -484,6 +489,9 @@ ul {
 .category__box-block {
   background: #F6F6F6;
   margin-top: 16px;
+}
+.category__box-block:hover {
+  background: var(--main-fdf-074, #FCEC41);
 }
 .category__box-block-title {
   padding: 12px 12px 16px;
@@ -1343,6 +1351,7 @@ ul {
 }
 
 .accordion__block {
+  margin: 0 auto;
   padding: 80px 140px;
   margin-bottom: 80px;
   border: 1px solid #D1D1D3;

@@ -53,7 +53,7 @@
 }
 
 .accordion__block {
-
+    margin: 0 auto;
     padding: 80px 140px;
     margin-bottom: 80px;
     border: 1px solid #D1D1D3;
@@ -90,7 +90,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: 136%;
-  
+
 }
 
 
@@ -105,17 +105,19 @@
 
 
 .arrow {
-    background: url(../images/delivery/Icon.png) center/cover no-repeat;;
+    background: url(../images/delivery/Icon.png) center/cover no-repeat;
+    ;
     width: 25px;
     height: 24px;
     color: #2F323A;
     font-weight: bold;
     float: right;
     margin-left: 5px;
-  
+
 }
-.accordion.active{
-    .arrow{
+
+.accordion.active {
+    .arrow {
         transform: rotate(180deg);
     }
 }

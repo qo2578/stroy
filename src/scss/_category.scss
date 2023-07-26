@@ -47,6 +47,9 @@
     &__box-block {
         background: #F6F6F6;
         margin-top: 16px;
+        &:hover{
+            background: var(--main-fdf-074, #FCEC41);
+        }
     }
 
     &__box-block-title {

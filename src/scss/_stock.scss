@@ -152,10 +152,15 @@
     }
 
     &__box-general-btn {
+        cursor: pointer;
         position: absolute;
         left: 16px;
         bottom: 16px;
         padding: 12px 88px;
         background: #FCEC41;
+        &:hover {
+            background: #2F323A;
+            color: #FFF;
+        }
     }
 }

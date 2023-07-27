@@ -99,38 +99,38 @@ $(document).ready(function () {
 // })
 
 
-const addToCartBtn = document.querySelector('.bestsellers__box-general-btn');
-const counter = document.querySelector('.counter');
-const minusBtn = document.querySelector('.counter__minus');
-const plusBtn = document.querySelector('.counter__plus');
-const counterInput = document.querySelector('.counter__input');
+const addToCartBtn = document.querySelectorAll('.bestsellers__box-general-btn');
+const counter = document.querySelectorAll('.counter');
+const minusBtn = document.querySelectorAll('.counter__minus');
+const plusBtn = document.querySelectorAll('.counter__plus');
+const counterInput = document.querySelectorAll('.counter__input');
 
-addToCartBtn.addEventListener('click', function(event) {
-  event.preventDefault();
-  addToCartBtn.style.display = 'none';
-  counter.style.display = 'flex';
-});
+let count = 0
+addToCartBtn.forEach((btn, index) => {
+    btn.addEventListener('click', function (event) {
+        event.preventDefault();
+        addToCartBtn[index].style.display = 'none';
+        counter[index].style.display = 'flex';
+    });
 
-minusBtn.addEventListener('click', function() {
-  let count = parseInt(counterInput.value);
-  if (count > 0) {
-    count--;
-    counterInput.value = count;
-  }
-});
+    minusBtn[index].addEventListener('click', function () {
+        if (count > 0) {
+            count--;
+            counterInput[index].value = count;
+        }
+    });
 
-plusBtn.addEventListener('click', function() {
-  let count = parseInt(counterInput.value);
-  count++;
-  counterInput.value = count;
-});
-
-counterInput.addEventListener('input', function() {
-  let count = parseInt(counterInput.value);
-  if (isNaN(count) || count < 0) {
-    counterInput.value = 0;
-  }
-});
+    plusBtn[index].addEventListener('click', function () {
+        count++;
+        counterInput[index].value = count;
+    });
+    counterInput[index].addEventListener('input', function () {
+        let count = parseInt(counterInput[index].value);
+        if (isNaN(count) || count < 0) {
+            counterInput[index].value = 0;
+        }
+    });
+})
 
 
 

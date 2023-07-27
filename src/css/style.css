@@ -611,7 +611,12 @@ ul {
   background: #2F323A;
   color: #FFF;
 }
-.counter__value {
+.counter__input {
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
   border-left: 1px solid var(--bgd-1-d-1-d-3, #D1D1D3);
   width: 175px;
   border-right: 1px solid var(--bgd-1-d-1-d-3, #D1D1D3);
@@ -623,6 +628,12 @@ ul {
   font-weight: 500;
   line-height: 136%;
   /* 24.48px */
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .brands {

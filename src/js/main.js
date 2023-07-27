@@ -69,36 +69,7 @@ $(document).ready(function () {
     })
 });
 
-
-// const addToCartBtn = document.querySelectorAll('.bestsellers__box-general-btn');
-// const counter = document.querySelectorAll('.counter');
-// const minusBtn = document.querySelectorAll('.counter__minus');
-// const plusBtn = document.querySelectorAll('.counter__plus');
-// const counterValue = document.querySelectorAll('.counter__value');
-
-// let count = 0;
-
-// addToCartBtn.forEach((btn, index) => {
-//     btn.addEventListener('click', function (event) {
-//         event.preventDefault();
-//         addToCartBtn[index].style.display = 'none';
-//         counter[index].style.display = 'flex';
-//     });
-
-//     minusBtn[index].addEventListener('click', function () {
-//         if (count > 0) {
-//             count--;
-//             counterValue[index].textContent = count;
-//         }
-//     });
-
-//     plusBtn[index].addEventListener('click', function () {
-//         count++;
-//         counterValue[index].textContent = count;
-//     });
-// })
-
-
+// кнопки для секции популярные товары
 const addToCartBtn = document.querySelectorAll('.bestsellers__box-general-btn');
 const counter = document.querySelectorAll('.counter');
 const minusBtn = document.querySelectorAll('.counter__minus');
@@ -132,7 +103,6 @@ addToCartBtn.forEach((btn, index) => {
     });
 })
 
-
-
+// чтобы input собирал только цифры
 document.querySelector("counter__input").addEventListener("keyup", function () {
     this.value = this.value.replace(/[^\d]/g, "");})

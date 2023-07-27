@@ -396,11 +396,12 @@ ul {
 }
 .stock__box-metal-tile {
   position: relative;
-  width: 278px;
+  width: 45%;
   height: 208px;
   background: url(../images/stock/Img4.png) center/cover no-repeat;
 }
 .stock__box-general {
+  width: 55%;
   position: relative;
   background: #FFFFFF;
   /* BG/E8E9EA */
@@ -618,7 +619,7 @@ ul {
   justify-content: center;
   border: none;
   border-left: 1px solid var(--bgd-1-d-1-d-3, #D1D1D3);
-  width: 176px;
+  width: 69%;
   border-right: 1px solid var(--bgd-1-d-1-d-3, #D1D1D3);
   height: 48px;
   color: var(--text-171-b-24, #171B24);

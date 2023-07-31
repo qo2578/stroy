@@ -1,16 +1,15 @@
 .dryMixes{
+    white-space: nowrap;
+    position: relative;
+    padding-bottom: 80px;
 .container{
     display: flex;
-    white-space: nowrap;
+   
 }
-
-
- &__img{
-    width: 20%;
- }
- &__block{
-    width: 80%; 
- } 
+.dryMixes__block{
+  position: absolute;
+  left: 90px;
+}
 .bestsellers{
        
  &__box-block {    
@@ -90,4 +89,7 @@
 }
 .bestsellers__box-block{
     width: 278px;
+}
+.footer{
+    padding-top: 280px;
 }

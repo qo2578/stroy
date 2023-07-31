@@ -1,0 +1,38 @@
+.info{
+
+    &__title{
+        color: var(--text-171-b-24, #171B24);
+/* H2 */
+font-family: Manrope;
+font-size: 34px;
+font-style: normal;
+font-weight: 600;
+line-height: 130%; /* 44.2px */
+    }
+
+    &__price{
+        color: var(--text-171-b-24, #171B24);
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: 130%; /* 31.2px */
+    }
+    &__box-general-btn {
+        width: 90%;
+        justify-content: center;
+        display: flex;
+        padding: 12px 80px;
+        background: #FCEC41;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 136%;
+        color: #171B24;
+
+        &:hover {
+            background: #2F323A;
+            color: #FFF;
+        }
+    }
+
+}

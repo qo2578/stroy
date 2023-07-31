@@ -1,0 +1,93 @@
+.dryMixes{
+.container{
+    display: flex;
+    white-space: nowrap;
+}
+
+
+ &__img{
+    width: 20%;
+ }
+ &__block{
+    width: 80%; 
+ } 
+.bestsellers{
+       
+ &__box-block {    
+    margin-bottom: 16px;
+    border: 1px solid #E8E9EA;
+}
+   
+&__box-img {
+    justify-content: center;
+    display: flex;
+    min-width: 278px;
+    min-height: 208px;
+}
+
+&__box-general {
+    position: relative;
+    justify-content: space-between;
+    min-width: 278px;
+    min-height: 208px;
+    background: #FFFFFF;
+    /* BG/E8E9EA */
+
+    border-top: 1px solid #E8E9EA;
+}
+
+&__box-general-text {
+    padding: 16px 16px 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+
+
+    /* Text/2F323A */
+
+    color: #2F323A;
+}
+
+&__box-general-price {
+    position: absolute;
+    left: 16px;
+    bottom: 80px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    /* identical to box height, or 28px */
+
+
+    /* Text/171B24 */
+
+    color: #171B24;
+}
+
+&__box-general-btn {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    width: 90%;
+    justify-content: center;
+    display: flex;
+    padding: 12px 80px;
+    background: #FCEC41;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 136%;
+    color: #171B24;
+
+    &:hover {
+        background: #2F323A;
+        color: #FFF;
+    }
+}
+}
+}
+.bestsellers__box-block{
+    width: 278px;
+}

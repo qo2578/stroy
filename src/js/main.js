@@ -106,3 +106,5 @@ addToCartBtn.forEach((btn, index) => {
 // чтобы input собирал только цифры
 document.querySelector("counter__input").addEventListener("keyup", function () {
     this.value = this.value.replace(/[^\d]/g, "");})
+
+
